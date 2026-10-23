@@ -88,7 +88,7 @@ figcaption b{display:block;color:var(--ink)}
 
 /* certs */
 .certs{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:16px}
-.cert{background:var(--bg);border:1px solid var(--line);border-radius:16px;overflow:hidden;
+.cert{background:var(--surface);border:1px solid var(--line);border-radius:16px;overflow:hidden;
   text-decoration:none;color:var(--ink);display:flex;flex-direction:column}
 .cert img{width:100%;aspect-ratio:4/3;object-fit:cover;object-position:top;border-bottom:1px solid var(--line);background:#fff}
 .cert div{padding:12px 16px;font-size:15px}
@@ -107,3 +107,7 @@ footer{padding:24px 0;text-align:center;color:var(--muted);font-size:14px;border
 .nav-end{display:flex;align-items:center;gap:18px}
 .hero .stats{grid-column:1/-1}
 .stat span{display:block;line-height:1.5}
+#farm .gallery{grid-template-columns:repeat(3,1fr)}
+#farm figure:first-child{grid-row:span 2;display:flex;flex-direction:column}
+#farm figure:first-child img{flex:1;aspect-ratio:auto;min-height:0;height:100%}
+@media (max-width:760px){ #farm .gallery{grid-template-columns:1fr} #farm figure:first-child{grid-row:auto} #farm figure:first-child img{aspect-ratio:3/4} }
