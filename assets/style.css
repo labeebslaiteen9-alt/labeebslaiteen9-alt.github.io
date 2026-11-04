@@ -115,3 +115,5 @@ footer{padding:24px 0;text-align:center;color:var(--muted);font-size:14px;border
 #employability figure:first-child{grid-column:1/-1}
 #employability figure img{aspect-ratio:20/9}
 @media (max-width:760px){ #employability .gallery{grid-template-columns:1fr} }
+.group-title{font-size:15px;font-weight:700;color:var(--brand-2);margin:0 0 18px}
+.timeline+.group-title{margin-top:8px}
